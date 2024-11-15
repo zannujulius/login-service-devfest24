@@ -1,0 +1,41 @@
+{
+  "name": "login",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --extensions \".ts,.tsx\" --out-dir dist",
+    "start": "npm run build && node dist/index.js",
+    "dev": "nodemon --exec babel-node src/index.ts --extensions \".ts,.tsx\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@babel/runtime": "^7.26.0",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.11.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.25.9",
+    "@babel/core": "^7.26.0",
+    "@babel/node": "^7.26.0",
+    "@babel/plugin-transform-runtime": "^7.25.9",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-typescript": "^7.26.0",
+    "@types/bcrypt": "^5.0.2",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.9.0",
+    "nodemon": "^3.1.7",
+    "typescript": "^5.6.3"
+  }
+}
